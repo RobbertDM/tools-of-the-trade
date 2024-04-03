@@ -1,10 +1,21 @@
 Set Shell zsh
-Sleep 500ms
+Set Theme "JetBrains Darcula"
+Set TypingSpeed 35ms
+Set PlaybackSpeed 0.5
 Require fzf
-Sleep 500ms
-Type "source ~/.zshrc"
+
+Hide
+Type "export AWS_PAGER=''"
 Enter
-Sleep 500ms
+Type "cd ~" # to not have a cluttered shell prompt
+Enter
+Type "source ~/.zshrc; clear"
+Enter
+Sleep 1500ms
+Show
+Type "aws sts get-caller-identity"
+Enter
+Sleep 3500ms
 Type "aws:switch"
 Enter
 Sleep 1500ms
@@ -13,30 +24,8 @@ Sleep 1500ms
 Enter
 Sleep 500ms
 Type "aws sts get-caller-identity"
-Sleep 500ms
 Enter
-Sleep 500ms
-Type "q"
-Sleep 500ms
-Escape
-Sleep 500ms
-Up
-Sleep 500ms
-Type " --ou"
-Tab
-Sleep 500ms
-Type "json"
-Enter
-Sleep 500ms
-Type "q"
-Sleep 500ms
-Escape
-Up
-Type " --no-c"
-Tab 2
-Sleep 1s
-Tab 2
-Enter 2
-Sleep 500ms
+Sleep 2000ms
+Sleep 1000ms
 Ctrl+D
 
